@@ -1,0 +1,141 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f7f7;
+  font-family: "Inter", sans-serif;
+  color: #006161;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  padding: 32px 60px;
+}
+
+/* NAVBAR */
+.navbar-nav .nav-link {
+  font-size: 15px;
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #006161;
+  color: #d1f1e5;
+  border: 2px solid #d1f1e5;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.link-button:hover {
+  background-color: #004d4d;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* MAIN */
+.card-body h6 {
+  font-weight: 600;
+  color: #002d24;
+}
+.card span {
+  font-weight: 500;
+}
+.btn-success {
+  background-color: #44d07b;
+  border: none;
+}
+
+/* section 2 */
+.section_two {
+  background-color: #e5edeb;
+  padding: 50px 72px;
+  margin-top: 30px;
+}
+
+/* footer */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* XS: Mobile */
+@media (min-width: 575.98px) {
+  body {
+    width: 100%;
+  }
+
+  /* HEADER */
+  header {
+    padding: 16px 20px;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .link-button {
+    display: none;
+  }
+
+  /* MAIN */
+  .section_two {
+    background-color: #e5edeb;
+    padding: 25px 30px;
+    margin-top: 30px;
+  }
+
+  /* FOOTER */
+  .text-secondary {
+    display: none;
+  }
+}
+
+/* MD: Tablet (≥768px) */
+@media (min-width: 768px) {
+  /* HEADER */
+  .navbar-nav {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  /* FOOTER */
+  .text-secondary-small {
+    display: none;
+  }
+
+  .text-secondary {
+    display: block;
+  }
+}
+
+/* LG: Laptop (≥992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* HEADER */
+  .link-button {
+    display: block;
+  }
+}
+
+/* XL: Desktop standard (≥1200px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/* XXL: Monitor grande (≥1400px) */
+@media (min-width: 1400px) {
+}
